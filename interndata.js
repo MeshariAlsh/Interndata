@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3001',  // Adjust this to match your frontend server URL
+    origin: 'https://www.oasisintern.com',  // Adjust this to match your frontend server URL
     methods: ['GET'],
     allowedHeaders: ['Content-Type']
   }));
