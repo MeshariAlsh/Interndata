@@ -1,10 +1,9 @@
-// server.js or your backend file
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: 'https://www.oasisintern.com',  // Adjust this to match your frontend server URL
+    origin: 'https://www.oasisintern.com',  
     methods: ['GET'],
     allowedHeaders: ['Content-Type']
   }));
@@ -183,6 +182,7 @@ const internshipsBusiness = [
   
 ];
 
+  // Engineering applications
 const internshipsEng= [
     {
         company: 'Salla',
@@ -327,7 +327,7 @@ const internshipsEng= [
 
   
 ];
-
+   // Legal applications
 const internshipsLegal= [
     {
         company: 'White & Case',
@@ -372,7 +372,7 @@ const internshipsLegal= [
 
   
 ];
-
+// Endpoints for each web page
 app.get('/api/internshipsBusiness', (req, res) => {
   res.json(internshipsBusiness);
 });
