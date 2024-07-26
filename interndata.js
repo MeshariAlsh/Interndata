@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: ['https://www.oasisintern.com', 'http://localhost:3000/'],  
+    origin: 'https://www.oasisintern.com',  
     methods: ['GET'],
     allowedHeaders: ['Content-Type']
   }));
